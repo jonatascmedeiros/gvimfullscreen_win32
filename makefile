@@ -7,10 +7,10 @@ LIBS =user32.lib gdi32.lib
 all: release
 
 release: gvimfullscreen.c
-	$(CC) $(CFLAGS) $(RELEASE_FLAGS) $(LIBS) gvimfullscreen.c
+	$(CC) $(CFLAGS) $(RELEASE_FLAGS) $(LIBS) src\gvimfullscreen.c
 
 debug: gvimfullscreen.c
-	$(CC) $(CFLAGS) $(DEBUG_FLAGS) $(LIBS) gvimfullscreen.c
+	$(CC) $(CFLAGS) $(DEBUG_FLAGS) $(LIBS) src\gvimfullscreen.c
 
 clean:
 	del *.obj
