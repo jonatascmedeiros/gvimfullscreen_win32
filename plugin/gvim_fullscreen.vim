@@ -11,7 +11,7 @@ endfunction
 
 function! s:toggle_fullscreen()
     if has("win32")
-        let lib_path = "lib/x86/gvimfullscreen.dll"
+        let lib_path = "lib\x86\gvimfullscreen.dll"
         if s:dll_is_installed(lib_path)
             let $GVIM_FULLSCREEN_DLL_PATH = split(globpath(&rtp, lib_path))[0]
             call libcallnr($GVIM_FULLSCREEN_DLL_PATH, "ToggleFullScreen", 0)
