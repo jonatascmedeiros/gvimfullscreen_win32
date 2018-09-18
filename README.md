@@ -10,15 +10,11 @@ A plugin for toggling gvim into a fullscreen window. For Windows gvim only.
 
 ## Instalation
 
-Using vim-plug add this to your .vimrc:
+Using [minpac](https://github.com/k-takata/minpac), add to your `.vimrc` after `call minpac#init()`:
 ```vim
-Plug 'jonatascmedeiros/gvimfullscreen_win32'
+call minpac#add('jonatascmedeiros/gvimfullscreen_win32')
 ```
-
-Then install the plugin with:
-```vim
-:PlugInstall
-```
+Then, install with `:call minpac#update()`.
 
 ## Usage
 
